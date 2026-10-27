@@ -1,0 +1,6 @@
+{
+  "name": "Shiksha Sakhi — शिक्षा सखी",
+  "description": "A gamified exam-preparation and bilingual PYQ practice platform designed for women preparing for TET, CTET, and Indian government examinations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
