@@ -7,6 +7,18 @@
 }
 
 @layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    min-width: 320px;
+    background:
+      radial-gradient(circle at 8% 0%, rgba(67, 56, 202, 0.035), transparent 25rem),
+      #FAF8F5;
+    -webkit-font-smoothing: antialiased;
+  }
+
   html {
     font-family: var(--font-sans);
     background-color: #FAF8F5;
@@ -16,6 +28,31 @@
 
   h1, h2, h3, .font-display {
     font-family: var(--font-display);
+  }
+
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button:focus-visible, a:focus-visible {
+    outline: 3px solid rgba(67, 56, 202, 0.3);
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  section.bg-white,
+  aside.bg-white {
+    box-shadow: 0 8px 24px rgba(30, 27, 46, 0.035);
+  }
+
+  section.bg-white:hover,
+  aside.bg-white:hover {
+    box-shadow: 0 12px 30px rgba(30, 27, 46, 0.055);
+  }
+
+  .shadow-2xs {
+    box-shadow: 0 8px 24px rgba(30, 27, 46, 0.035);
   }
 }
 
