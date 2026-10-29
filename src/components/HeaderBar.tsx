@@ -35,7 +35,7 @@ export function HeaderBar({
     .join("");
 
   return (
-    <header className="sticky top-0 z-30 h-14 bg-[#FAF8F5]/92 backdrop-blur-md border-b border-[#E8E2D9]">
+    <header className="sticky top-0 z-30 h-16 bg-[#FAF8F5]/92 backdrop-blur-md border-b border-[#E8E2D9] shadow-[0_1px_0_rgba(30,27,46,0.02)]">
       <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 flex items-center justify-between gap-4">
         {/* Left: Brand Wordmark + Exam Switcher Trigger */}
         <div className="flex items-center gap-3 min-w-0">
@@ -44,7 +44,7 @@ export function HeaderBar({
             onClick={() => onSelectNav(NavSection.LEARN)}
             className="flex items-center gap-2 text-left focus-visible:outline-2 focus-visible:outline-indigo-600 rounded-lg min-h-[44px] shrink-0"
           >
-            <div className="w-8 h-8 rounded-xl bg-[#4338CA] text-white flex items-center justify-center font-display font-bold text-sm shadow-xs">
+            <div className="w-9 h-9 rounded-xl bg-[#4338CA] text-white flex items-center justify-center font-display font-bold text-sm shadow-[0_5px_12px_rgba(67,56,202,0.22)]">
               श
             </div>
             <div className="leading-tight">
@@ -60,7 +60,7 @@ export function HeaderBar({
           <button
             type="button"
             onClick={onOpenExamDrawer}
-            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 min-h-[36px] rounded-lg bg-white border border-[#E8E2D9] hover:border-indigo-300 text-xs font-semibold text-[#2E294E] transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 min-h-[36px] rounded-lg bg-white border border-[#E8E2D9] hover:border-indigo-300 hover:shadow-sm text-xs font-semibold text-[#2E294E] transition-all whitespace-nowrap shrink-0 cursor-pointer"
             title="Switch examination or view all government exams"
           >
             <span>{examShortLabel}</span>

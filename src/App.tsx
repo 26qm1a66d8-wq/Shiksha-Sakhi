@@ -152,7 +152,7 @@ export default function App() {
       )}
 
       {/* Main Responsive Workspace (Mobile Single-Column -> Desktop 3-Column) */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 pt-5 pb-20 lg:pb-10 flex items-start gap-6 bg-[#9380ed]">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 pt-5 pb-20 lg:pb-10 flex items-start gap-6 bg-[#FAF8F5]">
         {/* Desktop Left Sidebar: Exam Chooser + All-India Govt Exams ("Coming Soon") */}
         <aside className="hidden lg:block w-72 shrink-0 sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto bg-white rounded-3xl border border-[#E8E2D9] p-5 shadow-2xs">
           <ExamSelectorPanel
